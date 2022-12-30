@@ -1,0 +1,111 @@
+2022-12-23 04:04:13 [debug]:  - running at http://:::9120
+2022-12-23 04:04:29 [debug]:  - running at http://:::9120
+2022-12-23 04:05:11 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:05:11 [debug]:  - Connection acquired from connection pool...Connection 332 acquired
+2022-12-23 04:05:11 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VessselInformation( DEFAULT,FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace',9344966,'- Unknown -',
+        '- Unknown -','null', 'null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null')
+2022-12-23 04:05:11 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DEFAULT,FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselMan' at line 1
+2022-12-23 04:05:11 [debug]:  - Connection 332 is released back to the pool
+2022-12-23 04:05:11 [error]:  - []
+2022-12-23 04:05:11 [error]:  - undefined
+2022-12-23 04:06:08 [debug]:  - running at http://:::9120
+2022-12-23 04:06:20 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:06:20 [debug]:  - Connection acquired from connection pool...Connection 333 acquired
+2022-12-23 04:06:20 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VessselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace',9344966,'- Unknown -',
+        '- Unknown -','null', 'null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null')
+2022-12-23 04:06:20 [error]:  - ER_NO_SUCH_TABLE: Table 'shipping.vessselinformation' doesn't exist
+2022-12-23 04:06:20 [debug]:  - Connection 333 is released back to the pool
+2022-12-23 04:06:20 [error]:  - []
+2022-12-23 04:06:20 [error]:  - undefined
+2022-12-23 04:08:41 [debug]:  - running at http://:::9120
+2022-12-23 04:09:44 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:09:44 [debug]:  - Connection acquired from connection pool...Connection 415 acquired
+2022-12-23 04:09:44 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace',9344966,'- Unknown -',
+        '- Unknown -','null', 'null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null')
+2022-12-23 04:09:44 [error]:  - ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'Last_Dry_Dock_Year' at row 1
+2022-12-23 04:09:44 [debug]:  - Connection 415 is released back to the pool
+2022-12-23 04:09:44 [error]:  - []
+2022-12-23 04:09:44 [error]:  - undefined
+2022-12-23 04:12:25 [debug]:  - running at http://:::9120
+2022-12-23 04:12:30 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:12:31 [debug]:  - Connection acquired from connection pool...Connection 416 acquired
+2022-12-23 04:12:31 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES (ALP,ALP,null,ALP Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+2022-12-23 04:12:31 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null' at line 2
+2022-12-23 04:12:31 [debug]:  - Connection 416 is released back to the pool
+2022-12-23 04:12:31 [error]:  - []
+2022-12-23 04:12:31 [error]:  - undefined
+2022-12-23 04:16:50 [debug]:  - running at http://:::9120
+2022-12-23 04:16:55 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:16:55 [debug]:  - Connection acquired from connection pool...Connection 417 acquired
+2022-12-23 04:16:55 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP',ALP,null,ALP Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+2022-12-23 04:16:55 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null' at line 2
+2022-12-23 04:16:55 [debug]:  - Connection 417 is released back to the pool
+2022-12-23 04:16:55 [error]:  - []
+2022-12-23 04:16:55 [error]:  - undefined
+2022-12-23 04:19:02 [debug]:  - running at http://:::9120
+2022-12-23 04:19:12 [debug]:  - running at http://:::9120
+2022-12-23 04:19:59 [debug]:  - running at http://:::9120
+2022-12-23 04:20:05 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:20:05 [debug]:  - Connection acquired from connection pool...Connection 439 acquired
+2022-12-23 04:20:05 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES (ALP,ALP,null,ALP Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+2022-12-23 04:20:05 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Ace,9344966,- Unknown -,
+        - Unknown -,null, null,null,null,null,null,null' at line 2
+2022-12-23 04:20:05 [debug]:  - Connection 439 is released back to the pool
+2022-12-23 04:20:05 [error]:  - []
+2022-12-23 04:20:05 [error]:  - undefined
+2022-12-23 04:23:40 [debug]:  - running at http://:::9120
+2022-12-23 04:23:46 [debug]:  - running at http://:::9120
+2022-12-23 04:53:18 [debug]:  - running at http://:::9120
+2022-12-23 04:53:29 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:53:29 [debug]:  - Connection acquired from connection pool...Connection 512 acquired
+2022-12-23 04:53:29 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace','9344966','- Unknown -',
+        '- Unknown -','null', 'null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null',null,null,null,'null',null,null,null,null,null,null,null,'null','null','null','null','null','null)'
+2022-12-23 04:53:29 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3
+2022-12-23 04:53:29 [debug]:  - Connection 512 is released back to the pool
+2022-12-23 04:53:29 [error]:  - []
+2022-12-23 04:53:29 [error]:  - undefined
+2022-12-23 04:53:44 [debug]:  - running at http://:::9120
+2022-12-23 04:53:48 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:53:48 [debug]:  - Connection acquired from connection pool...Connection 513 acquired
+2022-12-23 04:53:48 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace','9344966','- Unknown -',
+        '- Unknown -','null', 'null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null','null',null,null,null,'null',null,null,null,null,null,null,null,'null','null','null','null','null','null')
+2022-12-23 04:53:48 [error]:  - ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect integer value: 'null' for column 'Last_Dry_Dock_Year' at row 1
+2022-12-23 04:53:48 [debug]:  - Connection 513 is released back to the pool
+2022-12-23 04:53:48 [error]:  - []
+2022-12-23 04:53:48 [error]:  - undefined
+2022-12-23 04:56:32 [debug]:  - running at http://:::9120
+2022-12-23 04:56:37 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:56:37 [debug]:  - Connection acquired from connection pool...Connection 532 acquired
+2022-12-23 04:56:37 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace','9344966','- Unknown -',
+        '- Unknown -','null', 'null','null','null',null,null,null,'null','null','null','null','null','null','null','null','null','null','null','null','null',null,'null','null','null',null,null,null,'null',null,null,null,null,null,null,null,'null','null','null','null','null','null')
+2022-12-23 04:56:37 [error]:  - ER_TRUNCATED_WRONG_VALUE: Incorrect date value: 'null' for column 'Drop_Dead_Date' at row 1
+2022-12-23 04:56:37 [debug]:  - Connection 532 is released back to the pool
+2022-12-23 04:56:37 [error]:  - []
+2022-12-23 04:56:37 [error]:  - undefined
+2022-12-23 04:57:21 [debug]:  - running at http://:::9120
+2022-12-23 04:57:25 [debug]:  - **** New MySQL connection is made ****
+2022-12-23 04:57:25 [debug]:  - Connection acquired from connection pool...Connection 533 acquired
+2022-12-23 04:57:25 [debug]:  - AssetServiceDAO :: Insert New Vessel ,Query : INSERT INTO VesselInformation(FLEET_TYPE_NAME,SHIP_TEAM_CURRENT,SISTER_CLASS,NAME,IMO_NUMBER,VesselManagerRole,VESSEL_MGR_NAME,Builder,Builder_Country,Flag,FLEET_DIRECTOR,Last_Dry_Dock_Year,Last_Dry_Dock_Date,Next_Dry_Dock_Date,Last_Dry_Dock_Yard,Last_Hull_Cleaning,Last_Propellor_Polishing,Vessel_Code,Vessel,Voyage_Manager,Commercial_Office,SATB,Cellular,Vessel_Type,Vessel_Fleet,Vessel_Owner,Ownership,Year_Built,Trade_Area,Class_Society,Drop_Dead_Date,DWT,Speed_Laden,Speed_Ballast,Master_Name,ROB_Ifo,ROB_Lsf,ROB_Lsm,ROB_Mdo,ROB_Hsf,ROB_Mgo,ROB_Vls,Charterer,Operation_Type,VOP_Charterer,VOP_Operation_Type,Redelivery_Date,Sister_Vessels) 
+        VALUES ('ALP','ALP','null','ALP Ace','9344966','- Unknown -',
+        '- Unknown -','null', 'null','null','null',null,null,null,'null','null','null','null','null','null','null','null','null','null','null','null','null',null,'null','null',null,null,null,null,'null',null,null,null,null,null,null,null,'null','null','null','null','null','null')
+2022-12-23 04:57:25 [debug]:  - Connection 533 is released back to the pool
+2022-12-23 04:57:41 [debug]:  - running at http://:::9120
+2022-12-23 05:18:08 [debug]:  - running at http://:::9120
+2022-12-23 05:37:38 [debug]:  - running at http://:::9120
+2022-12-23 05:38:26 [debug]:  - running at http://:::9120
+2022-12-23 05:47:44 [debug]:  - running at http://:::9120
+2022-12-23 05:49:10 [debug]:  - running at http://:::9120

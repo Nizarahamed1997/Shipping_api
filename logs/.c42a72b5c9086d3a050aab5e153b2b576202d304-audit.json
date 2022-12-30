@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\.c42a72b5c9086d3a050aab5e153b2b576202d304-audit.json",
+    "files": [
+        {
+            "date": 1671690233035,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-22.log",
+            "hash": "ecdda3408858ea80b2cef6457db78ad52542ddd7b05f85489757768165a6acc3"
+        },
+        {
+            "date": 1671768252810,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-23.log",
+            "hash": "7d2d7ec8f7a0213068bb8e5cf4ad8c56cf7f9e9c4b03e6bf05f5ebeee1e957f1"
+        },
+        {
+            "date": 1672029193801,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-26.log",
+            "hash": "4f5c8dc1e256e817084b30b7070911462b41c9dd29ada090bbf8b493912a83a4"
+        },
+        {
+            "date": 1672205614375,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-28.log",
+            "hash": "10cc2af30b12b77b3c29cb62e8cf3a75bc1686f4de6d9f7ebf7797e80ffc16f8"
+        },
+        {
+            "date": 1672288572732,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-29.log",
+            "hash": "8c6e1844b4c4c2f34fc4b2c02a9a42b88abc0bc1d3bab2c09449bd897c8d89af"
+        },
+        {
+            "date": 1672370486104,
+            "name": "C:\\Users\\nizar\\node js\\shipping_api\\logs\\goose-resp-api-2022-12-30.log",
+            "hash": "96b48079be2d21de2dadc9e0e71c631d15cd68e9b700578d05cdd521a300b0fb"
+        }
+    ],
+    "hashType": "sha256"
+}
