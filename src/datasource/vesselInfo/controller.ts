@@ -5,19 +5,88 @@ import { queryHelper } from "./queryBuilder/mysql";
 import { vesselVariables } from "./enum";
 
 class Controller{
-  public getVesselDetails(search : any){
+  public getVesselDetails(search : any,limit : any,offset : number){
     return new Promise(async(resolve,reject)=>{
       try {
-        let vesselDetails = queryHelper.getVessels(search)
+        let vesselDetails = queryHelper.getVessels(search,limit,offset)
         let vesselList= await Utility.databaseQuery(
           vesselDetails,
           "GET Users List"
         );
+        
         return resolve({ status: "success", vesselList });
       }catch (error) { 
         logger.log("error", JSON.stringify(error));
         return reject(error);
       }
+    })
+  }
+
+  public createImoAndName(){
+    return new Promise(async(resolve,reject)=>{
+      try {
+        let imoNumber = ''
+        let vesselName = ''
+        let vesselInfoApiDatas =  await provider.vesselInfoApi();
+        for(let data of vesselInfoApiDatas[vesselVariables.VESSEL_DETAILS]){
+        imoNumber = data["IMO_NUMBER"];
+        vesselName = data["NAME"]
+          try {
+            let vesselImoAndName = queryHelper.insertNewVesselImoAndNameTable(imoNumber,vesselName)
+            await Utility.databaseQuery(vesselImoAndName,"Insert into ImoAndNameTable")
+          } catch (error) {
+            logger.error("error",JSON.stringify(error))
+          }
+        }
+        return resolve({
+          "status" : "success",
+          "message" : "Imo and Name table datas inserted"
+        })
+      } catch (error) {
+        logger.log("error",JSON.stringify(error))
+        return reject(error)
+      }
+    })
+  }
+
+  public insertVesselDetails(){
+    return new Promise(async(resolve,reject)=>{
+      try {
+        let vesselInfoApiDatas =  await provider.vesselInfoApi();
+        let insertNewVesselDatas : string = ''
+        let modifiedCasingQuery = queryHelper.fetchVesselKeysTable()
+        let modifiedCasingDatas = await Utility.databaseQuery(modifiedCasingQuery,"Select * from vesselColumn table")
+        let imoAndNameCheckQuery = queryHelper.fetchVesselImoAndNameTable()
+        let imoAndNameCheckDatas = await Utility.databaseQuery(imoAndNameCheckQuery,"Select * from imoAndNameTable")
+        let imoNumbersArr = []
+        for(let imos of imoAndNameCheckDatas){
+          imoNumbersArr.push(imos.IMO_Number)
+        }
+        for(let data of vesselInfoApiDatas[vesselVariables.VESSEL_DETAILS]){
+          let modifiedNames = []
+          let values = []
+          for(let eachData of Object.keys(data)){
+            for(let eachNameData of modifiedCasingDatas){
+              if(eachData == eachNameData.VesselDatas){
+                modifiedNames.push(eachNameData.CasingModifiedNames)
+                values.push(data[eachData])
+                break;
+              }
+            }  
+          }
+          if(imoNumbersArr.includes(data["IMO_NUMBER"])){
+            insertNewVesselDatas += queryHelper.insertNewVesselData(modifiedNames,values)
+          } 
+        }
+        await Utility.databaseQuery(insertNewVesselDatas, "Insert New Vessel data");
+       return resolve({
+        status: "success",
+        message: "New Shipping information Created!!!",
+        });
+      }catch (error) {
+        logger.log("error", JSON.stringify(error));
+        return reject(error);
+      }  
     })
   }
 
@@ -76,45 +145,7 @@ class Controller{
     //   })  
     // }
 
-  public insertVesselDetails(){
-    return new Promise(async(resolve,reject)=>{
-      try {
-        let datas =  await provider.vesselInfoApi();
-        let data = {}
-        let vesselColumn = queryHelper.fetchVesselColumn()
-        let fetchedData = await Utility.databaseQuery(vesselColumn,"Select * from vesselColumn table")
-        for(data of datas[vesselVariables.VESSEL_DETAILS]){
-          let q1 = []
-          let q2 = []
-          for(let i of Object.keys(data)){
-            for(let j of fetchedData){
-              if(i == j.VesselDatas){
-                q1.push(j.CasingModifiedNames)
-                q2.push(data[i])
-                break;
-              }
-            }  
-          }
-          try{
-            let insertNewVesselData : string = queryHelper.insertNewVesselData(q1,q2)
-            await Utility.databaseQuery(insertNewVesselData, "Insert New Vessel data");
-          }catch (error) {
-            if(error.code == "ER_DUP_ENTRY" ){
-              continue
-            }
-          }
-        }
-       return resolve({
-        status: "success",
-        message: "New Shipping info Created!!!",
-        });
-      }catch (error) {
-        logger.log("error", JSON.stringify(error));
-        return reject(error);
-      }
-        
-    })
-  }
+
 }
 
 export const controller = new Controller();

@@ -1,0 +1,57 @@
+2023-01-02 05:03:56 [debug]:  - running at http://:::9120
+2023-01-02 05:04:27 [debug]:  - **** New MySQL connection is made ****
+2023-01-02 05:04:27 [debug]:  - Connection acquired from connection pool...Connection 8 acquired
+2023-01-02 05:04:27 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,VIM.Name, 
+      VIM.ImoNumber,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+      VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
+      VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
+      VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
+      VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      FROM VesselInformation AS VIM 
+      WHERE 1 LIMIT 50 OFFSET 0
+2023-01-02 05:04:27 [debug]:  - Connection 8 is released back to the pool
+2023-01-02 05:04:40 [debug]:  - Connection acquired from connection pool...Connection 8 acquired
+2023-01-02 05:04:40 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,VIM.Name, 
+      VIM.ImoNumber,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+      VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
+      VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
+      VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
+      VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      FROM VesselInformation AS VIM 
+      WHERE 1 LIMIT 50 OFFSET 50
+2023-01-02 05:04:40 [debug]:  - Connection 8 is released back to the pool
+2023-01-02 05:05:22 [debug]:  - Connection acquired from connection pool...Connection 8 acquired
+2023-01-02 05:05:22 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,VIM.Name, 
+      VIM.ImoNumber,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+      VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
+      VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
+      VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
+      VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      FROM VesselInformation AS VIM 
+      WHERE VIM.ImoNumber LIKE '9676149' LIMIT 50 OFFSET 50
+2023-01-02 05:05:22 [debug]:  - Connection 8 is released back to the pool
+2023-01-02 05:05:46 [debug]:  - Connection acquired from connection pool...Connection 8 acquired
+2023-01-02 05:05:46 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,VIM.Name, 
+      VIM.ImoNumber,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+      VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
+      VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
+      VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
+      VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      FROM VesselInformation AS VIM 
+      WHERE VIM.ImoNumber LIKE '9676149' LIMIT 50 OFFSET 50
+2023-01-02 05:05:46 [debug]:  - Connection 8 is released back to the pool
+2023-01-02 05:06:49 [debug]:  - Connection acquired from connection pool...Connection 8 acquired
+2023-01-02 05:06:49 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,VIM.Name, 
+      VIM.ImoNumber,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+      VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
+      VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
+      VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
+      VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      FROM VesselInformation AS VIM 
+      WHERE 1 LIMIT 50 OFFSET 0
+2023-01-02 05:06:49 [debug]:  - Connection 8 is released back to the pool

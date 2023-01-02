@@ -41,6 +41,8 @@ ALTER TABLE `vesselinformation` CHANGE `SisterVessels` `SisterVessels` VARCHAR(2
 
 ALTER TABLE `vesselinformation` ADD UNIQUE(`ImoNumber`);
 
+ALTER TABLE `vesselinformation` DROP INDEX `ImoNumber`;
+
 -- TABLE STRUCTURE FOR TABLE VESSEL INFOR
 
 CREATE TABLE `shipping`.`vesselinfo` (`uuid` CHAR(36) NOT NULL , `VesselName` VARCHAR(250) NOT NULL , `IMO_Number` VARCHAR(250) NOT NULL ) ENGINE = InnoDB;

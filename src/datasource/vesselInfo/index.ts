@@ -11,9 +11,17 @@ class VesselInfo{
   private initialize(){
     this.router.get('/details',async(req,res)=>{
       try{
-        let { search }  = req.query;
+        let { search,page }  = req.query;
+        if(!page){
+          return res.send({
+            "status" : "failure",
+            "message" : "Necessary parameter missing"
+          })
+        }
+        let limit = 50;
+        page = page*limit - limit;
         console.log(search)
-        let vesselDetails = await controller.getVesselDetails(search)
+        let vesselDetails = await controller.getVesselDetails(search,limit,page)
         return res.send(vesselDetails)
       }catch(error){
         logger.log("error",error)
@@ -24,8 +32,21 @@ class VesselInfo{
       }
     })
 
+    this.router.get('/imo_and_names', async(req,res)=>{
+      try {
+        let finalResponse = await controller.createImoAndName();
+        return res.send(finalResponse)
+      } catch (error) {
+        logger.log("error", error);
+        return res.send({
+          status: "failure",
+          message: "Internal Server Error!!!",
+        });
+      }
+    })
 
-    this.router.post('/vesselInfo',async(req,res)=>{
+
+    this.router.get('/vessel_info_api',async(req,res)=>{
       try {
         let finalResponse = await controller.insertVesselDetails();
         return res.send((finalResponse));
