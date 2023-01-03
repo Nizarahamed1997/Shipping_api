@@ -1,5 +1,6 @@
 export enum vesselVariables  {
     VESSEL_DETAILS = "Vessel Details",
+    Get_Vessel_List_With_GPS = 'Get Vessel List With GPS',
     FLEET_TYPE_NAME = 'FleetTypeName',
     SHIP_TEAM_CURRENT = 'ShipTeamCurrent',
     SISTER_CLASS = 'SisterClass',

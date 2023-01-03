@@ -43,115 +43,125 @@ ALTER TABLE `vesselinformation` ADD UNIQUE(`ImoNumber`);
 
 ALTER TABLE `vesselinformation` DROP INDEX `ImoNumber`;
 
--- TABLE STRUCTURE FOR TABLE VESSEL INFOR
+ALTER TABLE `vesselinformation`
+  DROP `Name`,
+  DROP `ImoNumber`;
 
-CREATE TABLE `shipping`.`vesselinfo` (`uuid` CHAR(36) NOT NULL , `VesselName` VARCHAR(250) NOT NULL , `IMO_Number` VARCHAR(250) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `vesselinformation` ADD `fk_ImoAndNameId` INT NOT NULL AFTER `SisterVessels`;
 
-ALTER TABLE `vesselinfo` ADD PRIMARY KEY(`uuid`);
+-- TABLE STRUCTURE FOR TABLE VESSEL IMOANDNAME
 
-UPDATE `vesselinfo` SET `uuid`= UUID();
+CREATE TABLE `shipping`.`vesselinfo` (`VesselName` VARCHAR(250) NOT NULL , `IMO_Number` VARCHAR(250) NOT NULL ) ENGINE = InnoDB;
 
--- TABLE STRUCTURE FOR VESSEL COLUMNS
+ALTER TABLE `vesselimoandname` ADD `Id` INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (`Id`);
 
-CREATE TABLE `shipping`.`vesselcolumns` (`Id` INT NOT NULL AUTO_INCREMENT , `VesselDatas` VARCHAR(100) NOT NULL , `CasingModifiedNames` VARCHAR(100) NOT NULL , `uuid` CHAR(36) NOT NULL , PRIMARY KEY (`Id`)) ENGINE = InnoDB;
+ALTER TABLE `vesselimoandname` ADD UNIQUE(`IMO_Number`);
+
+-- TABLE STRUCTURE FOR VESSEL KEYS
+
+CREATE TABLE `shipping`.`vesselkeys` (`Id` INT NOT NULL AUTO_INCREMENT , `VesselDatas` VARCHAR(100) NOT NULL , `CasingModifiedNames` VARCHAR(100) NOT NULL , PRIMARY KEY (`Id`)) ENGINE = InnoDB;
 
 
-ALTER TABLE `vesselcolumns` ADD UNIQUE(`VesselDatas`, `CasingModifiedNames`);
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames) 
+        VALUES ('FLEET_TYPE_NAME','FleetTypeName'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('SHIP_TEAM_CURRENT','ShipTeamCurrent'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('SISTER_CLASS','SisterClass') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('VesselManagerRole','VesselManagerRole') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('VESSEL_MGR_NAME','VesselMgrName') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Builder','Builder') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Builder Country','BuilderCountry') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Flag','Flag') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('FLEET_DIRECTOR','FleetDirector'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Last Dry Dock Year','LastDryDockYear') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Last Dry Dock Date','LastDryDockDate'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Next Dry Dock Date','NextDryDockDate') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Last Dry Dock Yard','LastDryDockYard') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Last Hull Cleaning','LastHullCleaning') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Last Propellor Polishing','LastPropellorPolishing'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Vessel Code','VesselCode') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Vessel','Vessel') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Voyage Manager','VoyageManager'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Commercial Office','CommercialOffice'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('SATB','SATB'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Cellular','Cellular'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Vessel Type','VesselType'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Vessel Fleet','VesselFleet'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Vessel Owner','VesselOwner') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Ownership','Ownership'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Year Built','YearBuilt'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Trade Area','TradeArea'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Class Society','ClassSociety'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Drop Dead Date','DropDeadDate') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('DWT','DWT'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Speed Laden','SpeedLaden'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Speed Ballast','SpeedBallast');
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Master Name','MasterName'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Ifo','ROBIfo') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Lsf','ROBLsf') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Lsm','ROBLsm'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Mdo','ROBMdo') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Hsf','ROBHsf') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Mgo','ROBMgo'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('ROB Vls','ROBVls') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Charterer','Charterer') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Operation Type','OperationType') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('VOP Charterer','VOPCharterer');
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('VOP Operation Type','VOPOperationType'); 
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Redelivery Date','RedeliveryDate') ;
+        INSERT INTO Vesselkeys(VesselDatas,CasingModifiedNames)
+        VALUES ('Sister Vessels','SisterVessels');
 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames) 
-        VALUES ('FLEET_TYPE_NAME','FleetTypeName') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('SHIP_TEAM_CURRENT','ShipTeamCurrent') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('SISTER_CLASS','SisterClass') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('NAME','Name') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('IMO_NUMBER','ImoNumber') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('VesselManagerRole','VesselManagerRole') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('VESSEL_MGR_NAME','VesselMgrName') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Builder','Builder') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Builder Country','BuilderCountry') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Flag','Flag') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('FLEET_DIRECTOR','FleetDirector') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Last Dry Dock Year','LastDryDockYear') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Last Dry Dock Date','LastDryDockDate') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Next Dry Dock Date','NextDryDockDate') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Last Dry Dock Yard','LastDryDockYard') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Last Hull Cleaning','LastHullCleaning') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Last Propellor Polishing','LastPropellorPolishing') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Vessel Code','VesselCode') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Vessel','Vessel') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Voyage Manager','VoyageManager') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Commercial Office','CommercialOffice') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('SATB','SATB') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Cellular','Cellular') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Vessel Type','VesselType') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Vessel Fleet','VesselFleet') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Vessel Owner','VesselOwner') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Ownership','Ownership') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Year Built','YearBuilt') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Trade Area','TradeArea') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Class Society','ClassSociety') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Drop Dead Date','DropDeadDate') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('DWT','DWT') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Speed Laden','SpeedLaden') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Speed Ballast','SpeedBallast') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Master Name','MasterName') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Ifo','ROBIfo') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Lsf','ROBLsf') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Lsm','ROBLsm') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Mdo','ROBMdo') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Hsf','ROBHsf') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Mgo','ROBMgo') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('ROB Vls','ROBVls') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Charterer','Charterer') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Operation Type','OperationType') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('VOP Charterer','VOPCharterer') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('VOP Operation Type','VOPOperationType') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Redelivery Date','RedeliveryDate') 
-        INSERT INTO VesselColumns(VesselDatas,CasingModifiedNames)
-        VALUES ('Sister Vessels','SisterVessels')
 
+-- TABLE STRUCTURE FOR LATANDLONG
+
+CREATE TABLE `shipping`.`latandlong` (`Id` INT NOT NULL AUTO_INCREMENT , `CallSign` VARCHAR(100) NOT NULL , `PollingTime` VARCHAR(100) NOT NULL , `Latitude` VARCHAR(100) NOT NULL , `Longitude` VARCHAR(100) NOT NULL , `ShipSpeed` INT NOT NULL , `ShipDirection` INT NOT NULL , `fk_ImoAndNameId` INT NOT NULL , PRIMARY KEY (`Id`)) ENGINE = InnoDB;
+
+ALTER TABLE `latandlong` ADD `FleetTypeName` VARCHAR(100) NOT NULL AFTER `Id`, ADD `ShipTeamCurrent` VARCHAR(100) NOT NULL AFTER `FleetTypeName`;
+
+ALTER TABLE `latandlong` ADD `SisterClass` VARCHAR(100) NOT NULL AFTER `ShipTeamCurrent`;
+
+ALTER TABLE `latandlong` CHANGE `FleetTypeName` `FleetTypeName` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `ShipTeamCurrent` `ShipTeamCurrent` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `SisterClass` `SisterClass` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `CallSign` `CallSign` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `PollingTime` `PollingTime` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `Latitude` `Latitude` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `Longitude` `Longitude` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL, CHANGE `ShipSpeed` `ShipSpeed` INT NULL DEFAULT NULL, CHANGE `ShipDirection` `ShipDirection` INT NULL DEFAULT NULL;

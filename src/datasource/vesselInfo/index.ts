@@ -32,23 +32,10 @@ class VesselInfo{
       }
     })
 
-    this.router.get('/imo_and_names', async(req,res)=>{
-      try {
-        let finalResponse = await controller.createImoAndName();
-        return res.send(finalResponse)
-      } catch (error) {
-        logger.log("error", error);
-        return res.send({
-          status: "failure",
-          message: "Internal Server Error!!!",
-        });
-      }
-    })
-
-
     this.router.get('/vessel_info_api',async(req,res)=>{
       try {
-        let finalResponse = await controller.insertVesselDetails();
+        let type = req.query.type;
+        let finalResponse = await controller.apiPath();
         return res.send((finalResponse));
       }catch (error) {
         logger.log("error", error);

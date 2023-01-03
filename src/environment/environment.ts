@@ -8,6 +8,7 @@ export const environment = {
     },
     TeekayApis: {
       key :  "f5471111e88e4642a0a1b2998bc23840",
-      URL : `https://staging-api.teekay.com/uat/VesselInfo/GetVesselInfo?type=A`
+      URL1 : `https://staging-api.teekay.com/uat/VesselInfo/GetVesselInfo?type=A`,
+      URL2 : `https://staging-api.teekay.com/uat/VesselInfo/GetVesselListWithGPS`
     }
   };
