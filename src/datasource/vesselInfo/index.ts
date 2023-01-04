@@ -32,10 +32,11 @@ class VesselInfo{
       }
     })
 
-    this.router.get('/vessel_info_api',async(req,res)=>{
+    this.router.get('/vessel_info_api/:type',async(req,res)=>{
       try {
-        let type = req.query.type;
-        let finalResponse = await controller.apiPath();
+        let type = req.params.type;
+        console.log(type)
+        let finalResponse = await controller.apiPath(type);
         return res.send((finalResponse));
       }catch (error) {
         logger.log("error", error);

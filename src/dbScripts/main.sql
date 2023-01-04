@@ -49,6 +49,8 @@ ALTER TABLE `vesselinformation`
 
 ALTER TABLE `vesselinformation` ADD `fk_ImoAndNameId` INT NOT NULL AFTER `SisterVessels`;
 
+ALTER TABLE `vesselinformation` ADD `Type` VARCHAR(8) NOT NULL AFTER `SisterVessels`;
+
 -- TABLE STRUCTURE FOR TABLE VESSEL IMOANDNAME
 
 CREATE TABLE `shipping`.`vesselinfo` (`VesselName` VARCHAR(250) NOT NULL , `IMO_Number` VARCHAR(250) NOT NULL ) ENGINE = InnoDB;

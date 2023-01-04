@@ -6,12 +6,12 @@ import { vesselVariables } from "./enum";
 import { resolve } from "path";
 
 class Controller{
-  public apiPath(){
+  public apiPath(type){
     return new Promise(async(resolve,reject)=>{
       try {
-        let vesselInfoApiDatas =  await provider.vesselInfoApi();
+        let vesselInfoApiDatas =  await provider.vesselInfoApi(type);
         let latAndLongApiDatas = await provider.latAndLongApi();
-        await this.insertVesselDetails(vesselInfoApiDatas,latAndLongApiDatas)
+        await this.insertVesselDetails(vesselInfoApiDatas,latAndLongApiDatas,type)
         return resolve({
           status: "success",
           message: "New Shipping information Created!!!",
@@ -40,7 +40,7 @@ class Controller{
     })
   }
 
-  public insertVesselDetails(vesselInfoApiDatas,latAndLongApiDatas){
+  public insertVesselDetails(vesselInfoApiDatas,latAndLongApiDatas,type){
     return new Promise(async(resolve,reject)=>{
       try {
         let insertNewVesselDatas : string = ''
@@ -53,7 +53,7 @@ class Controller{
           let values = queryValues["values"]
           let imoAndNameId = await this.imoNameCheck(data)
           try {
-            insertNewVesselDatas += queryHelper.insertNewVesselData(modifiedNames,values,imoAndNameId)
+            insertNewVesselDatas += queryHelper.insertNewVesselData(modifiedNames,values,imoAndNameId,type)
           } catch (error) {
             logger.log("error",JSON.stringify(error))
           }

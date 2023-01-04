@@ -17,14 +17,14 @@ class QueryHelper{
     return query;
   }
     
-  public insertNewVesselData(modifiedNames : string[],values : string[],imoAndNameId : any) {   
+  public insertNewVesselData(modifiedNames : string[],values : string[],imoAndNameId : any,type) {   
     let query;
     let nameQuery = ''
     let valueQuery = ''
     for(let key of modifiedNames){
       nameQuery += key + ", "
     }
-    nameQuery += "fk_ImoAndNameId"
+    nameQuery += "Type, fk_ImoAndNameId"
     for(let value of values){
       if(typeof(value) == 'string'){
         valueQuery += `"${value}"` + ", "
@@ -32,7 +32,7 @@ class QueryHelper{
         valueQuery += `${value}` + ", "
       }
     }
-    valueQuery += `${imoAndNameId}`
+    valueQuery += `'${type}',${imoAndNameId}`
     query = `INSERT INTO VesselInformation(${nameQuery}) 
       VALUES (${valueQuery});`;
     return query;

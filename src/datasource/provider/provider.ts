@@ -3,12 +3,12 @@ import { environment } from "../../environment/environment";
 import { logger } from "../../log/logger";
 
 class Provider {
-  public vesselInfoApi() {
+  public vesselInfoApi(type) {
     return new Promise(async (resolve, reject) => {
       try {
         let response = await axios({
           method: "get",
-          url: environment.TeekayApis.URL1,
+          url: environment.TeekayApis.URL1 +`?type=${type}`,
           headers: {
             "content-type": "application/x-www-form-urlencoded",
             "Ocp-Apim-Subscription-Key" : environment.TeekayApis.key

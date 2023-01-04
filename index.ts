@@ -35,17 +35,17 @@ app.use(function (req, res, next) {
   });
 
 
-// const job = new CronJob(
-// 	'* * */1 * * *',
-// 	async function () {
-//     try {
-//       await controller.createNewVesselInfo();
-//     } catch (error) {
-//       logger.log("error", error);
-//     }
-//   }
-// );
-// job.start()
+const job = new CronJob(
+	'0 0 */1 * * *',
+	async function () {
+    try {
+      await controller.apiPath('A');
+    } catch (error) {
+      logger.log("error", error);
+    }
+  }
+);
+job.start()
 
   let server = app.listen(PORT, function () {
     var { address, port } = server.address() as AddressInfo;
