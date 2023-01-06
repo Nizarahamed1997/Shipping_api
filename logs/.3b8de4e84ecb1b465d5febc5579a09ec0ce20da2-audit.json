@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/usr/src/app/logs/.3b8de4e84ecb1b465d5febc5579a09ec0ce20da2-audit.json",
+    "files": [
+        {
+            "date": 1672977235641,
+            "name": "/usr/src/app/logs/goose-resp-api-2023-01-06.log",
+            "hash": "1504d87b1eb2124c7f375f229a5d45a6b390fc42637b28f1bed2f7700314d9cd"
+        }
+    ],
+    "hashType": "sha256"
+}

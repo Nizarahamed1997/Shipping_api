@@ -11,7 +11,7 @@ class VesselInfo{
   private initialize(){
     this.router.get('/details',async(req,res)=>{
       try{
-        let { search,page }  = req.query;
+        let { search,page,fromDate,toDate }  = req.query;
         if(!page){
           return res.send({
             "status" : "failure",
@@ -21,7 +21,7 @@ class VesselInfo{
         let limit = 50;
         page = page*limit - limit;
         console.log(search)
-        let vesselDetails = await controller.getVesselDetails(search,limit,page)
+        let vesselDetails = await controller.getVesselDetails(search,limit,page,fromDate,toDate)
         return res.send(vesselDetails)
       }catch(error){
         logger.log("error",error)
@@ -32,20 +32,20 @@ class VesselInfo{
       }
     })
 
-    this.router.get('/vessel_info_api/:type',async(req,res)=>{
-      try {
-        let type = req.params.type;
-        console.log(type)
-        let finalResponse = await controller.apiPath(type);
-        return res.send((finalResponse));
-      }catch (error) {
-        logger.log("error", error);
-        return res.send({
-          status: "failure",
-          message: "Internal Server Error!!!",
-        });
-      }
-    });
+    // this.router.get('/vessel_info_api/:type',async(req,res)=>{
+    //   try {
+    //     let type = req.params.type;
+    //     console.log(type)
+    //     let finalResponse = await controller.apiPath(type);
+    //     return res.send((finalResponse));
+    //   }catch (error) {
+    //     logger.log("error", error);
+    //     return res.send({
+    //       status: "failure",
+    //       message: "Internal Server Error!!!",
+    //     });
+    //   }
+    // });
   }
   public getRoute(){
     return this.router; 

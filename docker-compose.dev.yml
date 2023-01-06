@@ -1,0 +1,14 @@
+version : "3"
+services:
+  docker-node:
+    build: 
+      context: .
+      target: development
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 9120:9120
+    environment:
+      - NODE_ENV=development
+    command: npm run dev:start

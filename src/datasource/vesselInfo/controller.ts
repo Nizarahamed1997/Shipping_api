@@ -24,10 +24,10 @@ class Controller{
     })
   }
 
-  public getVesselDetails(search : any,limit : any,offset : number){
+  public getVesselDetails(search : any,limit : any,offset : number,fromDate,toDate){
     return new Promise(async(resolve,reject)=>{
       try {
-        let vesselDetails = queryHelper.getVessels(search,limit,offset)
+        let vesselDetails = queryHelper.getVessels(search,limit,offset,fromDate,toDate)
         let vesselList= await Utility.databaseQuery(
           vesselDetails,
           "GET Users List"

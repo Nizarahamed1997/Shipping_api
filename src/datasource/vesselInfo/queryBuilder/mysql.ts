@@ -67,25 +67,36 @@ class QueryHelper{
   //   return query;
   // }
   
-  public getVessels(search?,limit?,offset?){
+  public getVessels(search?,limit?,offset?,fromDate?,toDate?){
     let whereCondition = '1'
     if(search){
       if(isNaN(parseInt(search))){
-        whereCondition = `IMV.VesselName LIKE '${search}'`
+        whereCondition += ` AND IMV.VesselName LIKE '${search}'`
       }else{
-        whereCondition = `IMV.IMO_Number LIKE '${search}'`
+        whereCondition += ` AND IMV.IMO_Number LIKE '${search}'`
       }
     }
-    let query = `SELECT DISTINCT VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,IMV.VesselName,IMV.IMO_Number,LAL.Latitude,LAL.Longitude,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
+    if(fromDate && toDate){
+      whereCondition += ` AND VIM.InsertUtc >= '${fromDate}' && VIM.InsertUtc <='${toDate}'`
+    }
+    let query = `SELECT DISTINCT IMV.IMO_Number,IMV.VesselName,VIM.FleetTypeName,VIM.ShipTeamCurrent,VIM.SisterClass,
+      LAL.Latitude,LAL.Longitude,VIM.VesselManagerRole,VIM.VesselMgrName,VIM.Builder,VIM.BuilderCountry,VIM.Flag, 
       VIM.FLEETDIRECTOR,VIM.LastDryDockYear,VIM.LastDryDockDate,VIM.NextDryDockDate,VIM.LastDryDockYard, 
       VIM.LastHullCleaning,VIM.LastPropellorPolishing,VIM.VesselCode,VIM.Vessel,VIM.VoyageManager, 
       VIM.CommercialOffice,VIM.SATB,VIM.Cellular,VIM.VesselType,VIM.VesselFleet,VIM.VesselOwner,VIM.Ownership, 
       VIM.YearBuilt,VIM.TradeArea,VIM.ClassSociety,VIM.DropDeadDate,VIM.DWT,VIM.SpeedLaden,VIM.SpeedBallast, 
-      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer 
+      VIM.MasterName,VIM.ROBIfo,VIM.ROBLsf,VIM.ROBLsm,VIM.ROBMdo,VIM.ROBHsf,VIM.ROBMgo,VIM.ROBVls,VIM.Charterer,
+      VIM.TYPE 
       FROM VesselInformation AS VIM
       LEFT JOIN VesselImoAndName AS IMV ON VIM.fk_ImoAndNameId = IMV.id
       LEFT JOIN LatAndLong AS LAL ON IMV.Id = LAL.fk_ImoAndNameId
-      WHERE ${whereCondition} LIMIT ${limit} OFFSET ${offset}`;
+      WHERE ${whereCondition} LIMIT ${limit} OFFSET ${offset};
+      SELECT COUNT(*) AS TotalCount FROM (
+        SELECT DISTINCT IMV.IMO_Number
+        FROM VesselInformation AS VIM
+        LEFT JOIN VesselImoAndName AS IMV ON VIM.fk_ImoAndNameId = IMV.id
+        LEFT JOIN LatAndLong AS LAL ON IMV.Id = LAL.fk_ImoAndNameId
+        WHERE ${whereCondition}) AS TBL`;
     return query
   }
 
