@@ -1,0 +1,715 @@
+2023-01-13 04:59:25 [debug]:  - running at http://:::9120
+2023-01-13 05:57:20 [debug]:  - running at http://:::9120
+2023-01-13 05:57:31 [debug]:  - running at http://:::9120
+2023-01-13 06:14:04 [debug]:  - running at http://:::9120
+2023-01-13 06:23:26 [debug]:  - running at http://:::9120
+2023-01-13 06:23:42 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 06:23:42 [debug]:  - Connection acquired from connection pool...Connection 359 acquired
+2023-01-13 06:23:42 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:23:42 [debug]:  - Connection 359 is released back to the pool
+2023-01-13 06:23:42 [debug]:  - Connection acquired from connection pool...Connection 359 acquired
+2023-01-13 06:23:42 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,Attachment,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,fixed,
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu','-',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','undefined','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 06:23:42 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'IfEnvImpact' in 'field list'
+2023-01-13 06:23:42 [debug]:  - Connection 359 is released back to the pool
+2023-01-13 06:23:42 [error]:  - []
+2023-01-13 06:24:25 [debug]:  - Connection acquired from connection pool...Connection 359 acquired
+2023-01-13 06:24:25 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:24:25 [debug]:  - Connection 359 is released back to the pool
+2023-01-13 06:24:25 [debug]:  - Connection acquired from connection pool...Connection 359 acquired
+2023-01-13 06:24:25 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,Attachment,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,fixed,
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu','-',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','undefined','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 06:24:25 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'fixed' in 'field list'
+2023-01-13 06:24:25 [debug]:  - Connection 359 is released back to the pool
+2023-01-13 06:24:25 [error]:  - []
+2023-01-13 06:27:49 [debug]:  - running at http://:::9120
+2023-01-13 06:28:32 [debug]:  - running at http://:::9120
+2023-01-13 06:28:43 [debug]:  - running at http://:::9120
+2023-01-13 06:28:45 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 06:28:45 [debug]:  - Connection acquired from connection pool...Connection 384 acquired
+2023-01-13 06:28:45 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:28:45 [debug]:  - Connection 384 is released back to the pool
+2023-01-13 06:28:45 [debug]:  - Connection acquired from connection pool...Connection 384 acquired
+2023-01-13 06:28:45 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,Attachment,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,fixed,
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu','-',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 06:28:45 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'fixed' in 'field list'
+2023-01-13 06:28:45 [debug]:  - Connection 384 is released back to the pool
+2023-01-13 06:28:45 [error]:  - []
+2023-01-13 06:29:25 [debug]:  - running at http://:::9120
+2023-01-13 06:29:27 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 06:29:27 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:29:27 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:29:27 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:29:27 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:29:27 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,Attachment,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu','-',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 06:29:27 [error]:  - ER_DATA_TOO_LONG: Data too long for column 'Details' at row 1
+2023-01-13 06:29:27 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:29:28 [error]:  - []
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,Attachment,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu','-',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM IncidentDetails;
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : INSERT INTO AlertNotification(FK_IncidentId,PIinformed,FD,HMInformed,HseqManager,ClassNotified,
+        MarineManager,VesselManager,ChartersNotified,MarineHr,Laden) VALUES(13,1,'Boby Sebastian',0,'Manish Nayyar',1,
+        'Anant Sharma','Sachin Teotia',1,
+        'vijay',0)
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:30:06 [debug]:  - Connection acquired from connection pool...Connection 385 acquired
+2023-01-13 06:30:06 [debug]:  - AssetServiceDAO :: Create new alert FOcreateAlertFollowUp ,Query : INSERT INTO AlertFollowUp(FK_AlertNotificationId,FK_IncidentId)
+    VALUES(13,13)
+2023-01-13 06:30:06 [debug]:  - Connection 385 is released back to the pool
+2023-01-13 06:38:58 [debug]:  - running at http://:::9120
+2023-01-13 06:43:34 [debug]:  - running at http://:::9120
+2023-01-13 06:43:52 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 06:43:52 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:43:52 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:43:52 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:43:52 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:43:52 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',Attachment ='-',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =12
+2023-01-13 06:43:52 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:43:52 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:43:52 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 12,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0,
+       WHERE Id =12;
+2023-01-13 06:43:52 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE Id =12' at line 6
+2023-01-13 06:43:52 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:43:52 [error]:  - []
+2023-01-13 06:44:37 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:37 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:44:37 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:37 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:37 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,ID.TeamName AS teamName,AT.Name AS alertType,
+    ID.AlertTitle AS alertTitle,
+    IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    AFU.InsertUTC AS lastUpdated,AFU.DetailsOfAction AS updates
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN AlertType AS AT ON AT.Id = ID.AlertType
+    LEFT JOIN AlertFollowUp AS AFU ON ID.IncidentId = AFU.FK_IncidentId
+      WHERE 1 ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+      SELECT COUNT(*) AS TotalCount FROM (
+        SELECT ID.IncidentId
+        FROM IncidentDetails AS ID
+        WHERE 1) AS TBL
+2023-01-13 06:44:37 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:37 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:37 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,ID.TeamName AS teamName,
+    AT.Name AS alertType,
+    ID.AlertTitle AS alertTitle,
+    IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    AFU.InsertUTC AS lastUpdated,AFU.DetailsOfAction AS updates
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN AlertType AS AT ON AT.Id = ID.AlertType
+    LEFT JOIN AlertFollowUp AS AFU ON ID.IncidentId = AFU.FK_IncidentId
+      WHERE 1 AND ID.Status LIKE 0 AND (ID.VesselName LIKE 'Zenith Spirit'  || ID.AlertTitle LIKE 'Zenith Spirit') ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+      SELECT COUNT(*) AS TotalCount FROM (
+        SELECT ID.IncidentId
+        FROM IncidentDetails AS ID
+        WHERE 1 AND ID.Status LIKE 0 AND (ID.VesselName LIKE 'Zenith Spirit'  || ID.AlertTitle LIKE 'Zenith Spirit')) AS TBL
+2023-01-13 06:44:37 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:51 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:51 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:44:51 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:51 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:51 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',Attachment ='-',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =9
+2023-01-13 06:44:51 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:51 [debug]:  - Connection acquired from connection pool...Connection 479 acquired
+2023-01-13 06:44:51 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 9,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0,
+       WHERE Id =9;
+2023-01-13 06:44:51 [error]:  - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE Id =9' at line 6
+2023-01-13 06:44:51 [debug]:  - Connection 479 is released back to the pool
+2023-01-13 06:44:51 [error]:  - []
+2023-01-13 06:45:39 [debug]:  - running at http://:::9120
+2023-01-13 06:45:48 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 06:45:48 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:48 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:45:48 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:48 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:48 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',Attachment ='-',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =9
+2023-01-13 06:45:48 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:48 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:48 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 9,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0
+       WHERE Id =9;
+2023-01-13 06:45:48 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:48 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:48 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 06:45:48 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:48 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:48 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertFollowUp SET FK_AlertNotificationId = 13,
+    FK_IncidentId = 9 WHERE Id =9;
+2023-01-13 06:45:48 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:55 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:55 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 06:45:55 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:55 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:55 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,ID.TeamName AS teamName,AT.Name AS alertType,
+    ID.AlertTitle AS alertTitle,
+    IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    AFU.InsertUTC AS lastUpdated,AFU.DetailsOfAction AS updates
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN AlertType AS AT ON AT.Id = ID.AlertType
+    LEFT JOIN AlertFollowUp AS AFU ON ID.IncidentId = AFU.FK_IncidentId
+      WHERE 1 ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+      SELECT COUNT(*) AS TotalCount FROM (
+        SELECT ID.IncidentId
+        FROM IncidentDetails AS ID
+        WHERE 1) AS TBL
+2023-01-13 06:45:55 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:45:55 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:45:55 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,ID.TeamName AS teamName,
+    AT.Name AS alertType,
+    ID.AlertTitle AS alertTitle,
+    IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    AFU.InsertUTC AS lastUpdated,AFU.DetailsOfAction AS updates
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN AlertType AS AT ON AT.Id = ID.AlertType
+    LEFT JOIN AlertFollowUp AS AFU ON ID.IncidentId = AFU.FK_IncidentId
+      WHERE 1 AND ID.Status LIKE 0 AND (ID.VesselName LIKE 'Zenith Spirit'  || ID.AlertTitle LIKE 'Zenith Spirit') ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+      SELECT COUNT(*) AS TotalCount FROM (
+        SELECT ID.IncidentId
+        FROM IncidentDetails AS ID
+        WHERE 1 AND ID.Status LIKE 0 AND (ID.VesselName LIKE 'Zenith Spirit'  || ID.AlertTitle LIKE 'Zenith Spirit')) AS TBL
+2023-01-13 06:45:55 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:47:02 [debug]:  - Connection acquired from connection pool...Connection 480 acquired
+2023-01-13 06:47:02 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,ID.VesselCode AS vesselCode,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AODN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.VOC,'yes','no')voc,IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,ID.Attachment AS attachment,ID.NextPort AS nextPort,ID.ETA AS eta,ID.Status AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,ID.Category AS category,ID.Severity AS severity,
+    ID.FirstAlertNotification AS firstAlertNotification,ID.fk_Analytics_Id,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VoyageManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    
+      WHERE 1 AND ID.IncidentId LIKE 9  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 06:47:02 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'AN.VoyageManager' in 'field list'
+2023-01-13 06:47:02 [debug]:  - Connection 480 is released back to the pool
+2023-01-13 06:47:02 [error]:  - []
+2023-01-13 06:47:02 [error]:  - undefined
+2023-01-13 07:01:17 [debug]:  - running at http://:::9120
+2023-01-13 07:01:25 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 07:01:25 [debug]:  - Connection acquired from connection pool...Connection 484 acquired
+2023-01-13 07:01:25 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,ID.Attachment AS attachment,ID.NextPort AS nextPort,ID.ETA AS eta,ID.Status AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    
+      WHERE 1 AND ID.IncidentId LIKE 9  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 07:01:25 [debug]:  - Connection 484 is released back to the pool
+2023-01-13 07:02:32 [debug]:  - running at http://:::9120
+2023-01-13 07:02:34 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 07:02:34 [debug]:  - Connection acquired from connection pool...Connection 485 acquired
+2023-01-13 07:02:34 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,ID.Attachment AS attachment,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    
+      WHERE 1 AND ID.IncidentId LIKE 9  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 07:02:34 [debug]:  - Connection 485 is released back to the pool
+2023-01-13 07:03:01 [debug]:  - Connection acquired from connection pool...Connection 485 acquired
+2023-01-13 07:03:01 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,ID.Attachment AS attachment,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    
+      WHERE 1 AND ID.IncidentId LIKE 8  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 07:03:01 [debug]:  - Connection 485 is released back to the pool
+2023-01-13 07:03:18 [debug]:  - Connection acquired from connection pool...Connection 485 acquired
+2023-01-13 07:03:18 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,ID.Attachment AS attachment,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    
+      WHERE 1 AND ID.IncidentId LIKE 5  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 07:03:18 [debug]:  - Connection 485 is released back to the pool
+2023-01-13 09:26:13 [debug]:  - running at http://:::9120
+2023-01-13 09:27:27 [debug]:  - running at http://:::9120
+2023-01-13 09:27:29 [debug]:  - running at http://:::9120
+2023-01-13 09:28:15 [debug]:  - running at http://:::9120
+2023-01-13 09:28:18 [debug]:  - running at http://:::9120
+2023-01-13 09:34:02 [debug]:  - running at http://:::9120
+2023-01-13 09:34:14 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 09:34:14 [debug]:  - Connection acquired from connection pool...Connection 672 acquired
+2023-01-13 09:34:14 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 09:34:14 [debug]:  - Connection 672 is released back to the pool
+2023-01-13 09:34:14 [debug]:  - Connection acquired from connection pool...Connection 672 acquired
+2023-01-13 09:34:14 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 09:34:14 [debug]:  - Connection 672 is released back to the pool
+2023-01-13 09:34:14 [debug]:  - Connection acquired from connection pool...Connection 672 acquired
+2023-01-13 09:34:14 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM IncidentDetails;
+2023-01-13 09:34:14 [debug]:  - Connection 672 is released back to the pool
+2023-01-13 09:34:14 [debug]:  - Connection acquired from connection pool...Connection 672 acquired
+2023-01-13 09:34:14 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachment(FK_IncidentId,Attachments)
+    VALUES(14,'-')
+2023-01-13 09:34:14 [error]:  - ER_NO_SUCH_TABLE: Table 'shipping.attachment' doesn't exist
+2023-01-13 09:34:14 [debug]:  - Connection 672 is released back to the pool
+2023-01-13 09:34:14 [error]:  - []
+2023-01-13 09:34:58 [debug]:  - running at http://:::9120
+2023-01-13 09:35:17 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 09:35:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:17 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 09:35:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:17 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 09:35:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:17 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM IncidentDetails;
+2023-01-13 09:35:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:18 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(15,'-')
+2023-01-13 09:35:18 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:18 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:18 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : INSERT INTO AlertNotification(FK_IncidentId,PIinformed,FD,HMInformed,HseqManager,ClassNotified,
+        MarineManager,VesselManager,ChartersNotified,MarineHr,Laden) VALUES(15,1,'Boby Sebastian',0,'Manish Nayyar',1,
+        'Anant Sharma','Sachin Teotia',1,
+        'vijay',0)
+2023-01-13 09:35:18 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:18 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:18 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 09:35:18 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:18 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:18 [debug]:  - AssetServiceDAO :: Create new alert FOcreateAlertFollowUp ,Query : INSERT INTO AlertFollowUp(FK_AlertNotificationId,FK_IncidentId)
+    VALUES(14,15)
+2023-01-13 09:35:18 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:35:38 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:35:38 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,Attachments.Attachments,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN Attachments ON ID.IncidentId = Attachments.FK_IncidentId
+      WHERE 1 ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 09:35:38 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =9
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(9,'-')
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 9,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0
+       WHERE Id =9;
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:36:40 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:36:40 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertFollowUp SET FK_AlertNotificationId = 14,
+    FK_IncidentId = 9 WHERE Id =9;
+2023-01-13 09:36:40 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =9
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(9,'-')
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 9,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0
+       WHERE Id =9;
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:15 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:15 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertFollowUp SET FK_AlertNotificationId = 14,
+    FK_IncidentId = 9 WHERE Id =9;
+2023-01-13 09:37:15 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: updated alert ,Query : UPDATE IncidentDetails SET VesselName ='Zenith Spirit',
+    AlertTitle = 'Zenith Spirit',AlertType = '5',TeamName = 'Aquila',
+    ImoNumber =123,Date='2023-01-19 10:43:55',MasterName ='Anjansaini',Latitude='36.432N',
+    Longitude='8.71667W',Ballast=1,IfInBallast= 'fixed',
+    EnvImpact =1,CommercialImpact=1,WeatherCondition='Wind -Fresh Breeze. Sea -Moderate. Swell -3M',
+    Details= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+    NextPort= 'at sea',ETA ='2023-01-19 10:43:55',Status=1,VoyageNumber = 123,Charterer ='Motiva Enterprises, LLC.',
+    TradingType ='SPOT',AOOPN='Almeria',Ballast =1,IfInBallast ='fixed',
+    IfEnvImpact ='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',IfCommercialImpact='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',VRTROLC =1 WHERE IncidentId =9
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(9,'-')
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertNotification SET FK_IncidentId = 9,PIinformed = 1,FD = 'Boby Sebastian',
+      HMInformed = 0,HseqManager = 'Manish Nayyar',ClassNotified = 1,
+      MarineManager = 'Anant Sharma',VesselManager = 'Sachin Teotia',
+      ChartersNotified = 1,
+      MarineHr = 'vijay',Laden = 0
+       WHERE Id =9;
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:17 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:17 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : UPDATE AlertFollowUp SET FK_AlertNotificationId = 14,
+    FK_IncidentId = 9 WHERE Id =9;
+2023-01-13 09:37:17 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:37:32 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:37:32 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,Attachments.Attachments,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN Attachments ON ID.IncidentId = Attachments.FK_IncidentId
+      WHERE 1 ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 09:37:32 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 09:38:01 [debug]:  - Connection acquired from connection pool...Connection 673 acquired
+2023-01-13 09:38:01 [debug]:  - AssetServiceDAO :: GET Users List ,Query : SELECT DISTINCT ID.IncidentId AS alertId,ID.VesselName AS vesselName,
+    ID.ImoNumber AS imoNumber,ID.Date AS date,ID.MasterName AS masterName,ID.Latitude AS latitude,
+    ID.Longitude AS longitude,ID.AOOPN AS areaOfOperation,IF(ID.Ballast, 'yes', 'no')ballast,IF(ID.IfInBallast , 'yes', 'no')ifInBallast,
+    IF(ID.EnvImpact,'yes','no')envImpact,IF(ID.VRTROLC,'yes','no') vesselRemindedOfTeam,
+    IF(ID.CommercialImpact,'yes','no')commercialImpact,ID.IfenvImpact AS ifEnvImpact,
+    ID.IfCommercialImpact AS ifCommercialImpact,ID.WeatherCondition AS weatherCondition,
+    ID.Details AS details,Attachments.Attachments,ID.NextPort AS nextPort,ID.ETA AS eta,IF(ID.Status = 0,'closed',IF(ID.Status = 1,'open','followUp')) AS status,
+    IF(AN.ChartersNotified,'yes','no')chartersNotified,
+    IF(AN.PiInformed,'yes','no')piInformed,AN.FD AS fd,IF(AN.HMInformed,'yes','no')hmInformed,AN.HseqManager AS hseqManager,
+    IF(AN.ClassNotified,'yes','no')classNotified,AN.MarineManager AS marineManager,IF(AN.Laden,'yes','no')laden,
+    AN.VesselManager AS vesselManager,AN.MarineHr AS marineHr
+    FROM IncidentDetails AS ID
+    LEFT JOIN AlertNotification AS AN ON ID.IncidentId = AN.FK_IncidentId
+    LEFT JOIN Attachments ON ID.IncidentId = Attachments.FK_IncidentId
+      WHERE 1 AND ID.IncidentId LIKE 13  ORDER BY ID.InsertUTC DESC LIMIT 50 OFFSET 0;
+2023-01-13 09:38:01 [debug]:  - Connection 673 is released back to the pool
+2023-01-13 11:25:39 [debug]:  - running at http://:::9120
+2023-01-13 11:26:14 [debug]:  - running at http://:::9120
+2023-01-13 11:26:27 [debug]:  - running at http://:::9120
+2023-01-13 11:26:49 [debug]:  - running at http://:::9120
+2023-01-13 11:31:41 [debug]:  - running at http://:::9120
+2023-01-13 11:32:04 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM IncidentDetails;
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(16,'undefined')
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : INSERT INTO AlertNotification(FK_IncidentId,PIinformed,FD,HMInformed,HseqManager,ClassNotified,
+        MarineManager,VesselManager,ChartersNotified,MarineHr,Laden) VALUES(16,1,'Boby Sebastian',0,'Manish Nayyar',1,
+        'Anant Sharma','Sachin Teotia',1,
+        'vijay',0)
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:32:04 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:32:04 [debug]:  - AssetServiceDAO :: Create new alert FOcreateAlertFollowUp ,Query : INSERT INTO AlertFollowUp(FK_AlertNotificationId,FK_IncidentId)
+    VALUES(15,16)
+2023-01-13 11:32:04 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:33:25 [debug]:  - Connection acquired from connection pool...Connection 704 acquired
+2023-01-13 11:33:25 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:33:25 [debug]:  - Connection 704 is released back to the pool
+2023-01-13 11:33:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:33:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:34:03 [debug]:  - running at http://:::9120
+2023-01-13 11:34:05 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:34:05 [debug]:  - Connection acquired from connection pool...Connection 708 acquired
+2023-01-13 11:34:05 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:34:05 [debug]:  - Connection 708 is released back to the pool
+2023-01-13 11:34:05 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:34:05 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:34:25 [debug]:  - Connection acquired from connection pool...Connection 708 acquired
+2023-01-13 11:34:25 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:34:25 [debug]:  - Connection 708 is released back to the pool
+2023-01-13 11:34:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:34:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:35:25 [debug]:  - Connection acquired from connection pool...Connection 708 acquired
+2023-01-13 11:35:25 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:35:25 [debug]:  - Connection 708 is released back to the pool
+2023-01-13 11:35:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:35:25 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:35:36 [error]:  - {}
+2023-01-13 11:35:50 [error]:  - {}
+2023-01-13 11:36:05 [error]:  - {}
+2023-01-13 11:36:47 [debug]:  - running at http://:::9120
+2023-01-13 11:36:52 [debug]:  - running at http://:::9120
+2023-01-13 11:36:58 [error]:  - {}
+2023-01-13 11:37:13 [error]:  - {}
+2023-01-13 11:37:31 [debug]:  - running at http://:::9120
+2023-01-13 11:37:33 [error]:  - {}
+2023-01-13 11:38:14 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:38:14 [debug]:  - Connection acquired from connection pool...Connection 709 acquired
+2023-01-13 11:38:14 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:38:14 [debug]:  - Connection 709 is released back to the pool
+2023-01-13 11:38:14 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:38:14 [error]:  - {"status":"failure","message":"Incorrect status value"}
+2023-01-13 11:39:27 [debug]:  - running at http://:::9120
+2023-01-13 11:39:59 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: alert table ,Query : SELECT * FROM AlertType;
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Create new alert ,Query : INSERT INTO IncidentDetails(VesselName,TeamName,ImoNumber,Date,AlertTitle,AlertType,
+      MasterName,Latitude,
+    Longitude,Ballast,IfInBallast,EnvImpact,VRTROLC,CommercialImpact,WeatherCondition,Details,
+    NextPort,ETA,Status,VoyageNumber,Charterer,TradingType,AOOPN,IfEnvImpact,IfCommercialImpact) VALUES('Zenith Spirit',
+      'Aquila',123,'2023-01-19 10:43:55','Zenith Spirit','5','Anjansaini','36.432N','8.71667W',1,'fixed',
+      1,1,1,'Wind -Fresh Breeze. Sea -Moderate. Swell -3M','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu',
+      'at sea','2023-01-19 10:43:55',1,123,'Motiva Enterprises, LLC.','SPOT','Almeria','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM IncidentDetails;
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(17,'undefined')
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Create new alert notification ,Query : INSERT INTO AlertNotification(FK_IncidentId,PIinformed,FD,HMInformed,HseqManager,ClassNotified,
+        MarineManager,VesselManager,ChartersNotified,MarineHr,Laden) VALUES(17,1,'Boby Sebastian',0,'Manish Nayyar',1,
+        'Anant Sharma','Sachin Teotia',1,
+        'vijay',0)
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Fetch details ,Query : SELECT * FROM AlertNotification;
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:39:59 [debug]:  - Connection acquired from connection pool...Connection 710 acquired
+2023-01-13 11:39:59 [debug]:  - AssetServiceDAO :: Create new alert FOcreateAlertFollowUp ,Query : INSERT INTO AlertFollowUp(FK_AlertNotificationId,FK_IncidentId)
+    VALUES(16,17)
+2023-01-13 11:39:59 [debug]:  - Connection 710 is released back to the pool
+2023-01-13 11:44:25 [debug]:  - running at http://:::9120
+2023-01-13 11:45:04 [debug]:  - running at http://:::9120
+2023-01-13 11:45:20 [debug]:  - running at http://:::9120
+2023-01-13 11:45:55 [debug]:  - running at http://:::9120
+2023-01-13 11:46:01 [debug]:  - running at http://:::9120
+2023-01-13 11:46:34 [debug]:  - running at http://:::9120
+2023-01-13 11:47:11 [debug]:  - running at http://:::9120
+2023-01-13 11:47:20 [debug]:  - running at http://:::9120
+2023-01-13 11:48:14 [debug]:  - running at http://:::9120
+2023-01-13 11:48:21 [debug]:  - running at http://:::9120
+2023-01-13 11:48:38 [error]:  - {}
+2023-01-13 11:50:24 [debug]:  - running at http://:::9120
+2023-01-13 11:50:31 [debug]:  - running at http://:::9120
+2023-01-13 11:51:59 [debug]:  - running at http://:::9120
+2023-01-13 11:52:08 [debug]:  - running at http://:::9120
+2023-01-13 11:52:54 [debug]:  - running at http://:::9120
+2023-01-13 11:53:25 [debug]:  - running at http://:::9120
+2023-01-13 11:53:31 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:53:31 [debug]:  - Connection acquired from connection pool...Connection 714 acquired
+2023-01-13 11:53:31 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(undefined,'kafka.txt')
+2023-01-13 11:53:31 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'
+2023-01-13 11:53:31 [debug]:  - Connection 714 is released back to the pool
+2023-01-13 11:53:31 [error]:  - []
+2023-01-13 11:54:29 [debug]:  - running at http://:::9120
+2023-01-13 11:54:31 [error]:  - {}
+2023-01-13 11:54:57 [debug]:  - running at http://:::9120
+2023-01-13 11:55:01 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:55:01 [debug]:  - Connection acquired from connection pool...Connection 715 acquired
+2023-01-13 11:55:01 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(undefined,'kafka.txt')
+2023-01-13 11:55:01 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'
+2023-01-13 11:55:01 [debug]:  - Connection 715 is released back to the pool
+2023-01-13 11:55:01 [error]:  - []
+2023-01-13 11:58:02 [debug]:  - Connection acquired from connection pool...Connection 715 acquired
+2023-01-13 11:58:02 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(undefined,'kafka.txt')
+2023-01-13 11:58:02 [error]:  - ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'field list'
+2023-01-13 11:58:02 [debug]:  - Connection 715 is released back to the pool
+2023-01-13 11:58:02 [error]:  - []
+2023-01-13 11:58:39 [debug]:  - running at http://:::9120
+2023-01-13 11:59:02 [debug]:  - running at http://:::9120
+2023-01-13 11:59:27 [debug]:  - running at http://:::9120
+2023-01-13 11:59:38 [debug]:  - running at http://:::9120
+2023-01-13 11:59:41 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 11:59:41 [debug]:  - Connection acquired from connection pool...Connection 716 acquired
+2023-01-13 11:59:41 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(5,'kafka.txt')
+2023-01-13 11:59:41 [debug]:  - Connection 716 is released back to the pool
+2023-01-13 12:00:48 [debug]:  - running at http://:::9120
+2023-01-13 12:01:10 [debug]:  - running at http://:::9120
+2023-01-13 12:01:12 [debug]:  - **** New MySQL connection is made ****
+2023-01-13 12:01:12 [debug]:  - Connection acquired from connection pool...Connection 717 acquired
+2023-01-13 12:01:12 [debug]:  - AssetServiceDAO :: Create new alert createAttahment ,Query : INSERT INTO Attachments(FK_IncidentId,Attachments)
+    VALUES(5,'kafka.txt')
+2023-01-13 12:01:12 [debug]:  - Connection 717 is released back to the pool

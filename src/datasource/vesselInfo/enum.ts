@@ -48,5 +48,14 @@ export enum vesselVariables  {
     'VOP Charterer' = 'VOPCharterer',
     'VOP Operation Type' = 'VOPOperationType',
     'Redelivery Date' = 'RedeliveryDate',
-    'Sister Vessels' = 'SisterVessels'
+    'Sister Vessels' = 'SisterVessels',
+    alertTitle = 'Alert Title',
+    vesselName = 'Vessel Name',
+    imoNo = 'IMO No',
+    date = 'Date',
+    time = 'Time',
+    mastersName = "Master's Name",
+    alertType = 'Alert Type',
+    latAndLong = 'Lat/Long',
+    areaOfOperation = 'Area of Operation'
   }

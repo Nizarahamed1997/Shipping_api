@@ -1,4 +1,5 @@
 import express from "express";
+import fileUpload from "express-fileupload"
 import { logger } from "./src/log/logger";
 import { AddressInfo } from "net";
 import  dataSource  from "./src/datasource/datasource";
@@ -6,6 +7,7 @@ var CronJob = require('cron').CronJob;
 import { controller } from "./src/datasource/vesselInfo/controller";
 
 let app = express();
+
 let PORT = process.env.PORT || 9120;
 // let CronJob = require("cron").CronJob;
 let cors = require("cors");
@@ -14,6 +16,7 @@ let dataSourceRoutes = dataSource.getRoute();
 
 app.use(cors());
 app.use(express.json());
+app.use(fileUpload());
 app.use('/',dataSourceRoutes)
 
 app.get('/',(req,res)=>{
@@ -36,7 +39,7 @@ app.use(function (req, res, next) {
 
 
 const job = new CronJob(
-	'0 0 */1 * * *',
+	'0 0 0 */1 * *',
 	async function () {
     try {
       await controller.apiPath('A');
